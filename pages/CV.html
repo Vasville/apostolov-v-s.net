@@ -16,9 +16,12 @@
         }
         .box {
             border: 3px outset lightgray;
-            width: 25%;
+            width: 30%;
             height: 100px;
             margin-top: 10px;
+            background-color: skyblue;
+            text-align: center;
+            color: white;
         }
         .footer {
 
@@ -36,6 +39,11 @@
            height: 105px;
            border-radius: 50%;
         }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
     </style>
 </head>
 <body>
@@ -46,8 +54,13 @@
         <h2>I was born on 09.02.1984</h2>
     </header>
     <main>
+        <div class="clearfix">
         <div class="box">
             <h1>My Education &<br> My Certificates</h1>
+        </div>
+        <div class="box">
+            <h1>My Work Experience</h1>
+        </div>
         </div>
     </main>
     <footer></footer>
