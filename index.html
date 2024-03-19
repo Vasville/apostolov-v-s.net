@@ -69,10 +69,17 @@
 <body>
     <img id="mypic3" class="mypic3" src="./images/mypic3.jpg" alt="mypic3">
     <div>
-        <p id="demo"></p>
+        <h1 id="demo"></h1>
         <script>
-            const d = new Date();
-            document.getElementById("demo").innerHTML = d;
+            setInterval(myFunction, 1000);
+
+            function myFunction() {
+                let d = new Date();
+                document.getElementById("demo").innerHTML =
+                    d.getHours() + ":" +
+                    d.getMinutes() + ":" +
+                    d.getSeconds();
+            }
         </script>
         <h1>I am Vasiliy Apostolov</h1>
         <h2>Welcome to my homepage</h2><br>
